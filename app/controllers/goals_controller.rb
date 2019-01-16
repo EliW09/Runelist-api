@@ -46,6 +46,6 @@ class GoalsController < ProtectedController
 
     # Only allow a trusted parameter "white list" through.
     def goal_params
-      params.require(:goal).permit(:title, :info, :user_id)
+      params.require(:goal).permit(:title, :info, :complete, :user_id)
     end
 end
